@@ -2,13 +2,14 @@
 #include<stdio.h>
 int main()
 {
-	int i=2,n,sum=0;
+	int i=1,n,sum=0, term=2;
 	printf("Enter a number: ");
 	scanf("%d",&n);
 	while(i<=n)
 	{
-		sum+=i;
-		i=i+3;
+		sum+=term;
+		term=term+3;
+		i++;
 	}
 	printf("the sum of the series is: %d",sum);
 	return 0;
